@@ -1,0 +1,46 @@
+/*Light Show Relay 16 bank
+  16 strains hooked up to 16 different outlets
+  
+ */
+//pins numbers:
+const int fogger = 12;
+const int red = 11;
+const int blue = 10;
+const int green = 9;
+const int orange = 8;
+const int pink = 7;
+const int purple = 6; 
+const int black = 5;
+const int white = 4; 
+
+//times:
+const int fog = 1000;//signal to start fog machine
+const int Lone = 2000;//light set one
+const int Ltwo;//light set two
+const int Lthree;//light set three
+const int Lfour = 2000;//light set four
+const int Lfive;//light set five
+const int Lsix;//light set six
+const int Lseven;//light set seven
+const int Leight;//light set eight
+const int Lnine;//light set nine
+const int Lten;//light set ten
+const int Leleven;//light set eleven
+const int Ltwelve;//light set twelve
+
+
+void setup() 
+{ 
+  pinMode(fogger,OUTPUT);
+  //Send signal to start fog machine
+  digitalWrite(fogger,HIGH); 
+  delay(fog); //alow for to start flowing
+  digitalWrite(fogger,LOW);
+
+  
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+}
